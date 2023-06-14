@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 262.28345, g: 324.97046, b: 430.1162, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -741,11 +741,77 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1245439097310812688, guid: 38c58e4fc651a4f08b18988e3140e78a, type: 3}
   m_PrefabInstance: {fileID: 1245439098696779147}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1682261652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1822473363633953527, guid: 0abbc6fe16e5042ec9e6736e297814ba, type: 3}
+  m_PrefabInstance: {fileID: 1823722753014632970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4944201417437189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1828103660607054351, guid: 0abbc6fe16e5042ec9e6736e297814ba, type: 3}
   m_PrefabInstance: {fileID: 1823722753014632970}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4944201417437190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682261652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dffc6b67c8d46dab52510ba96c266a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1155e2a8-a820-4911-b1e9-4770fd0f33e1
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 591b9fbd-fe34-4eaa-aa85-11b0a332e482
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: f647e4be-eca7-43be-a5d1-3c3efb0ec100
+      m_Path: <Keyboard>/upArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 69290e72-4917-4501-89ec-f594ca7dea60
+      m_Path: <Keyboard>/downArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 6482db41-f832-491f-ba05-df36e1bdae62
+      m_Path: <Keyboard>/leftArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: a9e428be-fc82-41ef-80aa-3a14e20c2626
+      m_Path: <Keyboard>/rightArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    m_Flags: 0
 --- !u!1001 &1245439098696779147
 PrefabInstance:
   m_ObjectHideFlags: 0
