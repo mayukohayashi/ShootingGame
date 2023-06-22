@@ -155,10 +155,10 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -7587912998031898735, guid: cd2858206701947e7b2ac2d5e44c2212, type: 2}
-    value: {fileID: 831740036}
   - key: {fileID: -841217722491663497, guid: cd2858206701947e7b2ac2d5e44c2212, type: 2}
     value: {fileID: 1403805595}
+  - key: {fileID: 8733613050590174010, guid: cd2858206701947e7b2ac2d5e44c2212, type: 2}
+    value: {fileID: 831740036}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &12305689
@@ -251,7 +251,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1e-45, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -820,7 +820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1828103660607054351, guid: 0abbc6fe16e5042ec9e6736e297814ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1828103660607054351, guid: 0abbc6fe16e5042ec9e6736e297814ba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -828,7 +828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1828103660607054351, guid: 0abbc6fe16e5042ec9e6736e297814ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5.57
       objectReference: {fileID: 0}
     - target: {fileID: 1828103660607054351, guid: 0abbc6fe16e5042ec9e6736e297814ba, type: 3}
       propertyPath: m_LocalRotation.w

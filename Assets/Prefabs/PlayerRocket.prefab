@@ -236,9 +236,9 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 8
     m_Flags: 0
-  controlSpeed: 20
-  xRange: 15
-  yRange: 10
+  controlSpeed: 30
+  xRange: 20
+  yRange: 15
   positionPitchFactor: -2
   controlPitchFactor: -15
   positionYawFactor: 3
