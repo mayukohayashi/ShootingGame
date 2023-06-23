@@ -1205,7 +1205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 437399901472970120, guid: 0f0d31f6a77264ed6821f5b70a3f4c6e, type: 3}
       propertyPath: m_Name
-      value: Laser
+      value: LaserLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f0d31f6a77264ed6821f5b70a3f4c6e, type: 3}
@@ -1267,7 +1267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 437399901472970120, guid: 0f0d31f6a77264ed6821f5b70a3f4c6e, type: 3}
       propertyPath: m_Name
-      value: Laser (1)
+      value: LaserRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f0d31f6a77264ed6821f5b70a3f4c6e, type: 3}
