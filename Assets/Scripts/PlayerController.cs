@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     InputAction movement;
 
     [SerializeField]
+    InputAction firingBeam;
+
+    [SerializeField]
     float controlSpeed = 10f;
 
     [SerializeField]
@@ -37,11 +40,13 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         movement.Enable();
+        firingBeam.Enable();
     }
 
     private void OnDisable()
     {
         movement.Disable();
+        firingBeam.Disable();
     }
 
     // Update is called once per frame
@@ -49,6 +54,23 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
+    }
+
+    private void ProcessTranslation()
+    {
+        xThrow = movement.ReadValue<Vector2>().x;
+        yThrow = movement.ReadValue<Vector2>().y;
+
+        float xOffset = xThrow * Time.deltaTime * controlSpeed;
+        float rawXPos = transform.localPosition.x + xOffset;
+        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
+
+        float yOffset = yThrow * Time.deltaTime * controlSpeed;
+        float rawYPos = transform.localPosition.y + yOffset;
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
+
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 
     private void ProcessRotation()
@@ -67,19 +89,15 @@ public class PlayerController : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
-    private void ProcessTranslation()
+    private void ProcessFiring()
     {
-        xThrow = movement.ReadValue<Vector2>().x;
-        yThrow = movement.ReadValue<Vector2>().y;
-
-        float xOffset = xThrow * Time.deltaTime * controlSpeed;
-        float rawXPos = transform.localPosition.x + xOffset;
-        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
-
-        float yOffset = yThrow * Time.deltaTime * controlSpeed;
-        float rawYPos = transform.localPosition.y + yOffset;
-        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
-
-        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+        if (firingBeam.ReadValue<float>() > 0.5) // 押す動作＝0-1の変化があるから
+        {
+            Debug.Log("shooting!");
+        }
+        else
+        {
+            Debug.Log("not shooting");
+        }
     }
 }
