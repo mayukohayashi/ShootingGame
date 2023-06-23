@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     InputAction movement;
 
     [SerializeField]
-    InputAction firingBeam;
+    InputAction firingLaser;
 
     [SerializeField]
     float controlSpeed = 10f;
@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     float yRange = 5f;
+
+    [SerializeField]
+    GameObject[] lasers;
 
     [SerializeField]
     float positionPitchFactor = -2f;
@@ -40,13 +43,13 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         movement.Enable();
-        firingBeam.Enable();
+        firingLaser.Enable();
     }
 
     private void OnDisable()
     {
         movement.Disable();
-        firingBeam.Disable();
+        firingLaser.Disable();
     }
 
     // Update is called once per frame
@@ -91,13 +94,29 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessFiring()
     {
-        if (firingBeam.ReadValue<float>() > 0.5) // 押す動作＝0-1の変化があるから
+        if (firingLaser.ReadValue<float>() > 0.5) // 押す動作＝0-1の変化があるから
         {
-            Debug.Log("shooting!");
+            ActivateLasers();
         }
         else
         {
-            Debug.Log("not shooting");
+            DeactivateLasers();
+        }
+    }
+
+    void ActivateLasers()
+    {
+        foreach (GameObject laser in lasers) // lasersはArray名として決めたが、laserの部分は何でも良い、lとかで良い
+        {
+            laser.SetActive(true);
+        }
+    }
+
+    void DeactivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
         }
     }
 }

@@ -176,6 +176,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &247919835 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6840955749477712310, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+  m_PrefabInstance: {fileID: 6545095235238970165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +256,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: NaN, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 4.5423257e+30, y: 1.8056953e+28, z: 4.3609316e+27, w: 3.909371e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -393,6 +398,11 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!1 &807566865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3542615312599710126, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+  m_PrefabInstance: {fileID: 6545095235238970165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &831740036 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6545095234946472881, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
@@ -547,7 +557,127 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3542615312599710112, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 3
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingBeam.m_Id
+      value: f774fc57-43ed-44fb-9a56-898479761a92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingLaser.m_Id
+      value: cb0c133f-70bd-4650-a44d-14d0d6234370
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingBeam.m_Name
+      value: Firing Beam
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingLaser.m_Name
+      value: Firing Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 247919835}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 807566865}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingBeam.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingLaser.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Id
+      value: bbe4a0d1-6e1f-404a-ae61-d0857421b9fd
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Id
+      value: 21153bc4-2f69-4096-bcd1-8c4d80bde638
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Id
+      value: bf82c72c-b669-493b-8282-fa9da508b000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingBeam.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 6da21778-119b-45c5-9c52-229ed9b170ce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Name
+      value: Firing
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Path
+      value: OneModifier
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Name
+      value: binding
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Name
+      value: binding
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingLaser.m_SingletonActionBindings.Array.data[0].m_Id
+      value: d1dc46e0-49f4-45c4-9a32-58bcf32d4b22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Flags
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingBeam.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[5].m_Action
+      value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Action
+      value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Action
+      value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingLaser.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingBeam.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Firing Beam
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866812193575166265, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: firingLaser.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Firing Laser
       objectReference: {fileID: 0}
     - target: {fileID: 6545095234946472886, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
       propertyPath: m_RootOrder
@@ -599,7 +729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6840955749477712312, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 3
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112c4790a37a14f14880793f47f316ee, type: 3}

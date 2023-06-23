@@ -238,9 +238,19 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 8
     m_Flags: 0
+  firingLaser:
+    m_Name: Firing Laser
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a07bdd24-af3e-46d2-9668-9edffffe2608
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   controlSpeed: 30
   xRange: 20
   yRange: 15
+  lasers: []
   positionPitchFactor: -2
   controlPitchFactor: -15
   positionYawFactor: 3
