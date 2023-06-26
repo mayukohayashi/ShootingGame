@@ -96,31 +96,21 @@ public class PlayerController : MonoBehaviour
     {
         if (firingLaser.ReadValue<float>() > 0.5) // 押す動作＝0-1の変化があるから
         {
-            ActivateLasers();
+            SetLasersActive(true);
         }
         else
         {
-            DeactivateLasers();
+            SetLasersActive(false);
         }
     }
 
-    void ActivateLasers()
+    void SetLasersActive(bool isActive)
     {
         foreach (GameObject laser in lasers) // lasersはArray名として決めたが、laserの部分は何でも良い、lとかで良い
         {
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
-            emissionModule.enabled = true;
+            emissionModule.enabled = isActive;
             // laser.SetActive(true);
-        }
-    }
-
-    void DeactivateLasers()
-    {
-        foreach (GameObject laser in lasers)
-        {
-            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
-            emissionModule.enabled = false;
-            // laser.SetActive(false);
         }
     }
 }
