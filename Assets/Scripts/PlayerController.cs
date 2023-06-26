@@ -108,7 +108,9 @@ public class PlayerController : MonoBehaviour
     {
         foreach (GameObject laser in lasers) // lasersはArray名として決めたが、laserの部分は何でも良い、lとかで良い
         {
-            laser.SetActive(true);
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = true;
+            // laser.SetActive(true);
         }
     }
 
@@ -116,7 +118,9 @@ public class PlayerController : MonoBehaviour
     {
         foreach (GameObject laser in lasers)
         {
-            laser.SetActive(false);
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = false;
+            // laser.SetActive(false);
         }
     }
 }
