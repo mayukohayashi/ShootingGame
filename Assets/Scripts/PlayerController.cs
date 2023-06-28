@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("General Setup Settings")]
     [SerializeField]
+    [Tooltip("For SystemInput(New)")]
     InputAction movement;
 
     [SerializeField]
@@ -20,23 +22,26 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float yRange = 5f;
 
+    [Header("Lasers gun array")]
     [SerializeField]
     GameObject[] lasers;
 
+    [Header("Screen position based tuning")]
     [SerializeField]
     float positionPitchFactor = -2f;
 
     [SerializeField]
-    float controlPitchFactor = -15f;
-
-    [SerializeField]
     float positionYawFactor = 3f;
+
+    [Header("Player input based tuning")]
+    [SerializeField]
+    float controlPitchFactor = -15f;
 
     [SerializeField]
     float controlRollFactor = -15f;
 
-    float yThrow;
-    float xThrow;
+    float yThrow,
+        xThrow;
 
     void Start() { }
 
