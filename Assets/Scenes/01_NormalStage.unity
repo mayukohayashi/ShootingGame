@@ -256,7 +256,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 4.5423257e+30, y: 1.8056953e+28, z: 4.3609316e+27, w: 3.909371e+30}
+  m_BoundingSphereOverride: {x: 0, y: 7.2e-43, z: 0, w: -1.1824586e-10}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -436,7 +436,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 94dece00b0112401c8bbc1311ea1bccc, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &979525639
 Terrain:
   m_ObjectHideFlags: 0
@@ -491,6 +491,23 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1245439097310812688, guid: 38c58e4fc651a4f08b18988e3140e78a, type: 3}
   m_PrefabInstance: {fileID: 1245439098696779147}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1959400682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6544093648365685704, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+  m_PrefabInstance: {fileID: 6545095235238970165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1959400687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959400682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf1bd890e79248c6869fdaaa0ac18e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1245439098696779147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -730,6 +747,10 @@ PrefabInstance:
     - target: {fileID: 6840955749477712312, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007287725688739004, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
