@@ -8,6 +8,9 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField]
     float timeOfDelay = 1f;
 
+    [SerializeField]
+    ParticleSystem explodedParticles;
+
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log($"{this.name} **Triggered by** {other.gameObject.name}");
@@ -16,7 +19,12 @@ public class CollisionHandler : MonoBehaviour
 
     void StartCrashSequence()
     {
+        explodedParticles.Play();
+
         GetComponent<PlayerController>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
+
         Invoke("ReloadLevel", timeOfDelay);
     }
 

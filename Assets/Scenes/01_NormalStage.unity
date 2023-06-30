@@ -256,7 +256,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1e-45, y: 0, z: 0, w: 6e-44}
+  m_BoundingSphereOverride: {x: 1e-45, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -491,24 +491,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1245439097310812688, guid: 38c58e4fc651a4f08b18988e3140e78a, type: 3}
   m_PrefabInstance: {fileID: 1245439098696779147}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1959400682 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6544093648365685704, guid: 112c4790a37a14f14880793f47f316ee, type: 3}
-  m_PrefabInstance: {fileID: 6545095235238970165}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1959400687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959400682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf1bd890e79248c6869fdaaa0ac18e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeOfDelay: 1
 --- !u!1001 &1245439098696779147
 PrefabInstance:
   m_ObjectHideFlags: 0
