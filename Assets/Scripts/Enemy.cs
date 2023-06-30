@@ -7,10 +7,7 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         Debug.Log($"I'm {this.name}. Hit by {other.gameObject.name}");
-    }
 
-    private void OnDestroy()
-    {
-        //
+        Destroy(gameObject);
     }
 }
