@@ -10,9 +10,20 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     Transform parent;
 
+    [SerializeField]
+    int scorePerHit = 11;
+
+    ScoreBoard scoreBoard;
+
+    void Start()
+    {
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+    }
+
     void OnParticleCollision(GameObject other)
     {
-        // Debug.Log($"I'm {this.name}. Hit by {other.gameObject.name}");
+        scoreBoard.IncreaseScore(scorePerHit);
+
         GameObject vfx = Instantiate(explosionVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
         Destroy(gameObject);
