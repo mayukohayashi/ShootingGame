@@ -11,13 +11,13 @@ public class ScoreBoard : MonoBehaviour
     void Start()
     {
         scoreText = GetComponent<TMP_Text>();
-        // scoreText.text = "Start";
+        scoreText.text = "Start";
 
     }
 
     public void IncreaseScore(int amountToIncrease)
     {
         score += amountToIncrease;
-        Debug.Log($"Score is now: {score}");
+        scoreText.text = score.ToString();
     }
 }
